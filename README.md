@@ -5,7 +5,7 @@
 
 ## 技術スタック
 
-HTML5, CSS3, SCSS, JavaScript, PHP
+HTML5, CSS3, Sass(SCSS), JavaScript, PHP
 
 
 ## Features
