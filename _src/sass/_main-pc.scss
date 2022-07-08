@@ -1,0 +1,186 @@
+// ===============
+// パソコン
+// ===============
+@include media(pc) {
+
+  .sp-tab-only {
+    display: none;
+  }
+
+  .global-nav {
+    &__link {
+      &::after {
+        content: '';
+        top: 50%;
+        left: 50%;
+        right: 0;
+        width: 105%;
+        height: 2px;
+        background-color: $color-sub;
+        position: absolute;
+        z-index: 20;
+        transform: translateX(-50%) scale(0);
+        opacity: .5;
+        transition: transform .3s;
+        transform-origin: center;
+      }
+
+      &:hover::after {
+        transform: translateX(-50%) scale(1);
+      }
+    }
+  }
+
+  .link {
+
+    &--arrow {
+      &:hover {
+        color: lighten($color-font, 40%);
+
+        &::before {
+          transform: translate(5px, -50%);
+        }
+
+        &::after {
+          transform: translate(5px);
+        }
+      }
+    }
+
+    &--chevron {
+      transition: all .3s;
+
+      &::before {
+        transition: all .3s;
+      }
+
+      &:hover {
+        color: lighten($color-font, 40%);
+
+        &::before {
+          transform: translate(5px, -35%) rotate(45deg);
+        }
+      }
+    }
+  }
+
+  .content {
+
+    &__inner {
+      &--3cols-wrapper {
+        width: 880px;
+      }
+
+      &--1col-wrapper {
+        width: 880px;
+      }
+    }
+
+    &--about {
+      &__deco {
+        left: -220px;
+      }
+    }
+
+    &--works {
+      padding: 270px 0;
+    }
+  }
+
+  // .main {
+  //   transform: translateY(-80px);
+  // }
+
+  .main-visual {
+    padding: 100px 0 400px;
+
+    &__description {
+      margin: 80px 0 0 170px;
+    }
+
+    &__circle {
+      top: 0;
+    }
+
+    &__triangle {
+      top: 0px;
+      left: calc(50% - 425px);
+
+    }
+
+    &__rectangle {
+      top: 330px;
+    }
+  }
+
+  // ------ header -------
+  .header {
+    min-height: 200px;
+
+    &::before {
+      border-top-width: 100px;
+      border-right-width: 385px;
+      border-bottom-width: 100px;
+      border-left-width: 385px;
+    }
+  }
+
+  // ------ SKILLS -------
+  .skills-dl {
+
+    &__title {
+
+      &--small {
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+
+  // ------ WORKSアーカイブ -------
+  .three-cols {
+    &__item {
+      margin-right: 38px;
+      width: auto;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(2n) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  // ------ BLOGアーカイブ -------
+  .one-col {
+    &__image {
+      width: 420px;
+      height: 274px;
+    }
+  }
+
+  .page-numbers {
+
+    &.prev {
+      &:hover {
+        color: lighten($color-font, 40%);
+
+        &::before {
+          transform: translate(-5px, -50%) rotate(-135deg);
+        }
+      }
+    }
+
+    &.next {
+      &:hover {
+        color: lighten($color-font, 40%);
+
+        &::before {
+          transform: translate(5px, -50%) rotate(45deg);
+        }
+      }
+    }
+  }
+
+}

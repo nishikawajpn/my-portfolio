@@ -1,0 +1,37 @@
+@charset "UTF-8";
+// ====================================
+// サイトの基本設定
+// ====================================
+
+// 幅関係の設定 -------------------------
+$width-base: 1000px;
+
+// フォント関係の設定 -------------------------
+$font-jp: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+$font-en-small: 'Abel', sans-serif;
+$font-en-large: 'Spinnaker', sans-serif;
+
+// 色関係の設定 -------------------------
+// サイトカラー
+$color-main: #F7F7F4;
+$color-accent: #B8A361;
+$color-sub: #f1193d;
+// フォントカラー
+$color-font: #161515;
+$color-font-light: #646460;
+// リンクカラー
+// $color-link: #ff8c28;
+
+// ブレイクポイント -------------------------
+$breakpoints: (
+  tb: "screen and (min-width: 600px)",
+  pc: "screen and (min-width: 1025px)",
+);
+
+// z-index -------------------------
+$z-index: (
+  global-nav: 5,
+  global-nav__menu: 1,
+  global-nav__body: 0,
+  header__logo: 4,
+);

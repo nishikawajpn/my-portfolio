@@ -1,0 +1,232 @@
+// ===============
+// タブレット
+// ===============
+@include media(tb) {
+
+  .sp-only {
+    display: none;
+  }
+
+  .heading {
+    &--circle {
+      padding-top: 50px;
+
+      &::after {
+        font-size: 42px;
+        padding-top: 50px;
+      }
+    }
+
+    &__en {
+      font-size: 42px;
+    }
+  }
+  .text {
+    font-size: 1.5rem;
+    line-height: 2.2;
+  }
+
+  .link {
+
+    &--email {
+      font-size: 2.6rem;
+    }
+
+    &__icon {
+      &--email {
+        width: 23px;
+      }
+    }
+  }
+
+  .content {
+    &__inner {
+      width: 80%;
+
+      &--3cols-wrapper {
+        width: 70%;
+      }
+
+      &--1col-wrapper {
+        width: 85%;
+      }
+    }
+
+    &--about {
+      &__deco {
+        left: -420px;
+      }
+    }
+
+    &--works {
+      padding: 200px 0;
+    }
+
+  }
+
+  .slider-li {
+    display: flex;
+  }
+
+  .main-visual {
+    padding: 220px 0 400px 50px;
+
+    &__title {
+      font-size: 47px;
+    }
+
+    &__description {
+      font-size: 1.7rem;
+      margin: 65px 0 0 80px;
+    }
+
+    &__circle {
+      width: 500px;
+      height: 500px;
+      top: 120px;
+      right: calc(50% - 400px);
+    }
+
+    &__triangle {
+      width: 400px;
+      padding-bottom: 347px;
+      top: 140px;
+      left: calc(50% - 410px);
+    }
+
+    &__rectangle {
+      display: block;
+      width: 200px;
+      height: 200px;
+      background-color: #efefef;
+      position: absolute;
+      z-index: 1;
+      top: 450px;
+      left: calc(50% - 240px);
+      transform: rotate(17deg);
+    }
+  }
+
+  // ------ header -------
+  .header {
+    min-height: 120px;
+
+    &::before {
+      border-top-width: 60px;
+      border-right-width: 250px;
+      border-bottom-width: 60px;
+      border-left-width: 250px;
+    }
+
+    &__logo {
+      top: 65px;
+      left: 60px;
+    }
+  }
+
+  .silhouette-link {
+    &--wrapper {
+      padding: 110px 0 20px;
+    }
+  }
+
+  .global-nav {
+    top: 70px;
+    right: 70px;
+
+    &__title {
+      font-size: 40px;
+    }
+  }
+
+
+  // ------ SKILLS -------
+  .skills-dl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item {
+      flex: 0 1 48%;
+
+      &:nth-child(n + 3) {
+        flex: 0 1 31%;
+      }
+    }
+
+    &__dt {
+      border-bottom-color: $color-accent;
+    }
+  }
+
+  // ------ WORKSアーカイブ -------
+  .three-cols {
+
+    &--wrapper {
+      text-align: left;
+    }
+
+    &__item {
+      width: 47%;
+
+      &:nth-child(2n) {
+        margin-left: 6%;
+      }
+    }
+  }
+
+  // ------ BLOGアーカイブ -------
+  .one-col {
+    position: relative;
+
+    &__item {
+      min-height: 274px;
+      box-sizing: content-box;
+    }
+
+    &__right {
+      padding-left: 52%;
+    }
+
+    &__image {
+      max-width: 48%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__readmore {
+      &--wrapper {
+        text-align: left;
+      }
+    }
+  }
+
+  // ------ 投稿ページ -------
+  .post-content {
+
+    &__body {
+      font-size: 1.6rem;
+      line-height: 2;
+    }
+  }
+
+  .difi-list {
+    &__link {
+
+      &--large {
+        display: inline-block;
+
+        &:not(:last-child) {
+          &::after {
+            content: '/';
+            display: inline-block;
+            padding: 0 5px 0 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
