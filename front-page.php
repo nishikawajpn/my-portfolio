@@ -33,7 +33,7 @@
                   <p class="skills-dl__title">HTML5 / CSS3</p>
                 </dt>
                 <dd class="skills-dl__dd">
-                  <p class="skills-dl__desc text">HTML5 / CSS3によるコーディング。EmmetやSassを使った効率的で、セマンティックなマークアップを心がけています。</p>
+                  <p class="skills-dl__desc text">HTML5 / CSS3によるコーディング。EmmetやSass、PugやWebpack・gulp.jsを使った効率的で、セマンティックなマークアップ。</p>
                 </dd>
               </div>
               <div class="skills-dl__item">
@@ -52,7 +52,7 @@
                   <p class="skills-dl__title">PHP<span class="skills-dl__title--small">（WP・Lavavel）</span></p>
                 </dt>
                 <dd class="skills-dl__dd">
-                  <p class="skills-dl__desc text">PHP・Laravelによるアプリケーション開発や、静的サイトのWordPress化。</p>
+                  <p class="skills-dl__desc text">PHPによるアプリケーション開発。WordPressのテーマ作成。</p>
                 </dd>
               </div>
               <div class="skills-dl__item">
